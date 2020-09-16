@@ -1,0 +1,66 @@
+<!--Personal modified startpage, original by Tayumpee-->
+<!--facebook.com/yourwaterlord-->
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>ジャスミン</title>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<div class="maincontainer">
+			<div class="time" id="time">
+				<script>
+					//document.getElementById("main").innerHTML = Date();
+					function updateClock() {
+						var days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+						var m = new Date();
+						var dateString =
+						  (days[ m.getDay() ]) + " " +
+						  ("0" + (m.getMonth()+1)).slice(-2) +"/"+
+						  ("0" + m.getDate()).slice(-2) + "/" +
+						  m.getFullYear() +" "+
+						  ("0" + m.getHours()).slice(-2) + ":" +
+						  ("0" + m.getMinutes()).slice(-2) + ":" +
+						  ("0" + m.getSeconds()).slice(-2);
+						
+						// set the content of the element with the ID time to the formatted string
+						document.getElementById('time').innerHTML = dateString;
+
+						// call this function again in 1000ms
+						setTimeout(updateClock, 1000);
+					}
+					updateClock(); // initial call
+				</script>
+			</div>
+			<div class="main" id="main1">
+				<div class="sidebar" style="background-image: url(img/m1.gif);"></div>
+				<div class="welcome">ジャスミン</div>
+				<div class="bookmarkscontainer">
+					<ul>
+						<li><a href="https://messenger.com" class="clink" target="_self">messenger</a>
+						<li><a href="https://gmail.com" class="clink" target="_self">gmail</a>
+						<li><a href="https://old.reddit.com" class="clink" target="_self">reddit</a>
+						<li><a href="https://youtube.com" class="clink" target="_self">youtube</a>
+						<li><a href="https://open.spotify.com/" class="clink" target="_self">spotify</a>
+					</ul>
+					<ul>
+						<li><a href="https://github.com" class="clink" target="_self">github</a>
+						<li><a href="https://blackboard.cpp.edu" class="clink" target="_self">blackboard</a>
+						<li><a href="https://cmsweb.cms.cpp.edu/psp/CPOMPRDF/EMPLOYEE/SA/s/WEBLIB_PTPP_SC.HOMEPAGE.FieldFormula.IScript_AppHP?pt_fname=POM_PF_BD&FolderPath=PORTAL_ROOT_OBJECT.POM_PF_BD&IsFolder=true" class="clink" target="_self">broncodirect</a>
+						<li><a href="https://my.cpp.edu" class="clink" target="_self">mycpp</a>
+					</ul>
+					<ul>
+						<li><a href="https://amazon.com" class="clink" target="_self">amazon</a>
+						<li><a href="https://old.reddit.com/r/buildapcsales/" class="clink" target="_self">r/buildapcsales</a>
+						<li><a href="https://old.reddit.com/r/FirefoxCSS/" class="clink" target="_self">r/firefoxcss</a>
+						<li><a href="https://old.reddit.com/r/MechanicalKeyboards/" class="clink" target="_self">r/mechanicalkeyboards</a>
+						<li><a href="https://old.reddit.com/r/mechmarket/" class="clink" target="_self">r/mechmarket</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
