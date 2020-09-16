@@ -12,7 +12,8 @@ input {
 body{
 	font-family: haxrcorp, monospace;
 	font-size:15px;
-	background-color:#191a2a;
+	background-color:#0c0c0c;
+	background-image: url("img/bg_tile.jpg");
 	background-repeat: repeat;
 }
 
